@@ -1,0 +1,938 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#college-intro{
+    position: relative;
+    min-height: 100vh;
+}
+
+#college-intro .bg-banner img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+#header {
+    padding: 25px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#header .menu-btn{
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#header .logo img{
+    position: relative;
+    z-index: 2;
+    width: 130px;
+    height: auto;
+}
+
+#header .navbar{
+    width: 280px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#header .navbar a{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.navbar a::after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    left: 50%;
+    top: 24px;        
+    width: 0%;
+    height: 3px;
+    transform: translateX(-68%);
+    transition: 0.3s;
+}
+
+#header .navbar a:hover::after{
+    width: 35px;
+}
+
+#college-intro .content{
+    position: relative;
+    padding-top: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    z-index: 1;
+}
+
+#college-intro .content h2{
+    color: white;
+    font-size: 50px;
+}
+
+#college-intro .content p{
+    color: white;
+    padding: 10px 420px;
+}
+
+#college-intro .content button{
+    margin-top: 20px;
+    color: white;
+    padding: 10px 15px;
+    background-color: transparent;
+    border-color: white;
+}
+
+#college-intro .content button:hover{
+    background-color: orangered;
+}
+
+#courses #course-offer .course-header h1{
+    margin-top: 40px;
+    text-align: center;
+}
+
+#courses #course-offer .course-header p{
+    margin-top: 5px;
+    text-align: center;
+}
+
+#courses .course-carts{
+    position: relative;
+    margin-top: 0px;
+    padding: 30px 7%;
+    /* padding: 15px 50px; */
+    height: auto;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#courses .course-carts .cart{
+    width: 30%;
+    border: 2px solid blanchedalmond;
+    border-radius: 5px;
+    background-color: blanchedalmond ;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+#courses .course-carts .cart p{
+    margin: 10px;
+}
+
+#courses .course-carts .cart:hover{
+    box-shadow: 1px 2px 1px rgb(39, 38, 38);
+}
+
+#campus .campus-header{
+    margin-top: 30px;
+    text-align: center;
+}
+
+#campus .campus-header p{
+    font-size: small;
+    font-weight: 300;
+    color: gray;
+}
+
+#campus .campus-img{
+    padding: 30px 7%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#campus .campus-img .box{
+    position: relative;
+    width: 30%;
+    height: 500px;
+
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#campus .campus-img .box img{
+    width: 100%;
+    height: 500px;
+    background-size: contain;
+    border-radius: 10px;
+}
+
+#campus .campus-img .box p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 25px;
+    opacity: 0;
+    z-index: 2;
+}
+
+
+#campus .campus-img .box::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%); 
+    transition: 0.6s ease;
+}
+
+#campus .campus-img .box:hover::after{
+    
+    transform: translateY(0);
+    background: rgba(225, 165, 0, 0.6);
+    opacity: 1;
+}
+
+#campus .box:hover p{
+    bottom: 50%;
+    transform: translate(-50%, -50%); /* center */
+    opacity: 1;
+}
+
+#facility .facility-title{
+    margin: 40px 0px;
+    text-align: center;
+}
+
+#facility .facility-title p{
+    font-size: 15px;
+}
+
+#facility .facility-carts{
+    padding: 30px 8.5%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#facility .facility-carts .cart{
+    width: 32%;
+    padding: 10px 0px;
+    height: auto;
+    border-radius: 10px;
+}
+
+#facility .facility-carts .cart img{
+    width: 98%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#facility .facility-carts .cart h3{
+    padding: 8px 0px;
+}
+
+#review .review-title{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#review .review-title h3{
+    font-size: 40px;
+}
+
+#review .review-title p{
+    font-size: 15px;
+}
+
+#review .review-carts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 30px 9%;
+}
+
+#review .review-carts .cart{
+    display: flex;
+    flex-direction: row;
+    width: 45%;
+    height: auto;
+    background-color: antiquewhite;
+    padding: 15px;
+}
+
+#review .review-carts .cart img{
+    width: 20%;
+    height: 50%;
+    border-radius: 50%;
+    padding: 0px 10px;
+}
+
+#review .review-carts .cart .cart-content h4{
+    padding: 7px 0px;
+}
+
+#review .review-carts .cart .cart-content i{
+    color: red;
+}
+
+#footer{
+    position: relative;
+    text-align: center;
+    margin: 30px 11.7%;
+    background-image: url("images/banner2.jpg");
+    background-size: cover;
+    padding: 70px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#footer::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6); /* dark effect */
+    backdrop-filter: blur(4px); /* blur */
+    z-index: 0;
+}
+
+#footer h2,
+#footer .contact {
+    position: relative;
+    z-index: 1;
+}
+
+
+#footer h2{
+    padding: 3% 20%;
+    color: white;
+}
+
+#footer .contact{
+    padding: 10px 30px;
+    font-size: 17px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    background: transparent;
+    cursor: pointer;
+}
+
+
+#footer .contact:hover{
+    background: red;
+}
+
+#About{
+    text-align: center;
+    padding: 0% 27%;
+}
+
+#About h3,
+#About .social-icon{
+    padding: 2% 0;
+}
+
+#About .social-icon a{
+    padding: 0px 10px;
+    color: red;
+}
+
+
+#page-header{
+    position: relative;
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#page-header::before{
+    content: "";
+    position: absolute;
+    backdrop-filter: blur(1px);
+    background: rgba(0, 0, 0, 0.6);
+    inset: 0;
+    z-index: 0;
+}
+
+
+#page-header .content{
+    position: relative;
+    text-align: center;
+    padding: 90px;
+    color: white;
+    z-index: 1;
+}
+
+#about-data{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 30px 7%;
+}
+
+#about-data .data{
+    width: 75%;
+    margin-left: 50px;
+}
+
+#about-data .data h3{
+    font-size: 35px;
+}
+
+#about-data .data p{
+    padding: 10px 0px;
+}
+
+#about-data .data button{
+    padding: 10px 7px;
+    color: red;
+    border-color: red;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#about-data .data button:hover{
+    background-color: red;
+    color: wheat;
+}
+
+
+#about-data .data-img img{
+    width: 70%;
+    height: auto;
+    margin-left: 30px;
+    border-radius: 5px;
+}
+
+#Blog-content{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-evenly; */
+    padding: 30px 7%;
+}
+
+#Blog-content .left-content{
+    width: 50%;
+}
+
+#Blog-content .left-content img{
+    width: 100%;
+    height: auto;
+}
+
+#Blog-content .right-content{
+    width: 50%;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+#Blog-content .right-content .title{
+    width: 40%;
+    background-color: red;
+    padding: 3px;
+    text-align: center;
+    color: white;
+    margin-bottom: 3px;
+}
+
+#Blog-content .right-content ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#Blog-content .right-content ul li{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3px 0;
+}
+
+#Blog-footer{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 10px 7%;
+    justify-content: space-between;
+}
+
+#Blog-footer .left-footer{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid gray;
+    border-radius: 3px;
+    padding: 20px 30px;
+    width: 47%;
+}
+
+#Blog-footer .left-footer .footer-form-title{
+    font-size: 20px;
+}
+
+#Blog-footer .left-footer .comment-form form{
+    display: flex;
+    flex-direction: column;
+}
+
+#Blog-footer .left-footer .comment-form form input{
+    padding: 5px 0;
+    margin: 10px 0;
+    background-color: rgb(194, 188, 188);
+}
+
+#Blog-footer .left-footer .comment-form form textarea{
+    margin: 10px 0;
+    background-color: rgb(194, 188, 188);
+    height: 50px;
+}
+
+#Blog-footer .left-footer .comment-form form button{
+    width: 120px;
+    padding: 7px;
+    border: 1px solid red;
+    color: red;
+    border-radius: 4px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#Blog-footer .right-footer{
+    text-align: justify;
+    width: 50%;
+    overflow-y: scroll;
+    border: 2px solid rgb(144, 144, 144);
+    padding: 0 3%;
+    height: 325px;
+    border-radius: 3px;
+}
+
+#Blog-footer .right-footer .title{
+    text-align: center;
+    margin: 8px 0;
+}
+
+#Blog-footer .right-footer .paragraph p{
+    padding: 3px 0;
+}
+
+
+#map{
+    padding: 30px 120px;
+}
+
+#map iframe {
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+#contact{
+    padding: 5px 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact{
+    padding: 5px 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact .left-contact .contact-details{
+    display: flex;
+    gap: 7px;
+    margin: 10px 0;
+}
+
+#contact .left-contact .contact-details i{
+    display: flex;
+    align-items: center;
+}
+
+
+#contact .right-contact form{
+    display: flex;
+    flex-direction: column;
+}
+
+#contact .right-contact form input, #contact .right-contact form textarea{
+    padding: 7px 7px;
+    margin: 2px 0px;
+    width: 500px;
+}
+
+#contact .right-contact form button{
+    padding: 7px 7px;
+    margin: 5px 0px;
+    width: 150px;
+    color: red;
+    border: 1.9px solid red;
+    background-color: white;
+}
+
+#contact .right-contact form button:hover{
+    background-color: red;
+    color: white;
+}
+
+
+#Appointment .appointment-button button{
+    position: fixed;
+    transform: rotate(-90deg);
+    padding: 8px 10px;
+    font-weight: bold;
+    border: 1.2px solid black;
+    border-radius: 5px;
+    left: 1446px;
+    top: 500px;
+}
+
+#myModal .modal-body form{
+    display: flex;
+    flex-direction: column;
+}
+
+#myModal .modal-body form input, 
+#myModal .modal-body form textarea{
+    margin: 5px 0px;
+}
+
+#myModal .modal-body form label{
+    font-weight: bold;
+}
+
+#myModal .modal-body form button{
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 1024px){
+
+#header .navbar {
+    width: 280px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#college-intro .content {
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#college-intro .content p {
+    color: white;
+    padding: 10px 180px;
+}
+
+#campus .campus-img .box {
+    position: relative;
+    width: 32%;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#review .review-carts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 30px 5%;
+}
+
+#review .review-carts .cart {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    height: auto;
+    background-color: antiquewhite;
+    padding: 15px;
+    margin: 10px;
+}
+
+#footer {
+    position: relative;
+    text-align: center;
+    margin: 30px 6%;
+    background-image: url("images/banner2.jpg");
+    background-size: cover;
+    padding: 70px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#about-data .data {
+    width: 100%;
+    margin-left: 35px;
+}
+
+#about-data .data-img img {
+    width: 80%;
+    height: auto;
+    margin-left: 30px;
+    border-radius: 5px;
+}
+
+
+}
+
+
+
+@media (max-width: 600px){
+
+#header .menu-btn{
+    display: block;
+}
+
+#header .navbar {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    background-color: white;
+    width: 120px;
+    height: 150px;
+    padding: 15px;
+    z-index: 2;
+}
+
+
+#header .navbar a{
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+
+.navbar a::after{
+    content: "";
+    position: absolute;
+    background-color: black;
+    left: 50%;
+    bottom: -5px;        
+    width: 0%;
+    height: 3px;
+    transform: translateX(-68%);
+    transition: 0.3s;
+}
+
+#header .navbar.active{
+    display: flex;
+}
+
+#college-intro .content {
+    padding: 7px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#college-intro .content h2 {
+    color: white;
+    font-size: 40px;
+}
+
+#college-intro .content p {
+    color: white;
+    padding: 7px 70px;
+}
+
+#courses .course-carts {
+    flex-direction: column;
+    padding: 5% 15%;
+}
+
+#courses .course-carts .cart {
+    width: 100%;
+    border: 2px solid blanchedalmond;
+    border-radius: 5px;
+    background-color: blanchedalmond;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+
+#campus .campus-img {
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#campus .campus-img .box {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#facility .facility-title {
+    margin-top: 20px;
+    margin-bottom: 7px;
+}
+
+#facility .facility-carts {
+    flex-direction: column;
+}
+
+#facility .facility-carts .cart {
+    width: 100%;
+}
+
+#review .review-carts {
+    flex-direction: column;
+}
+
+#review .review-carts .cart {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    margin: 10px;
+}
+
+#footer h2 {
+    padding: 3% 6%;
+    color: white;
+}
+
+#page-header .content {
+    position: relative;
+    text-align: center;
+    padding: 60px;
+    color: white;
+    z-index: 1;
+}
+
+#about-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 30px 7%;
+}
+
+#about-data .data {
+    width: 100%;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+#about-data .data-img img {
+    width: 100%;
+    height: auto;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+#About {
+    text-align: center;
+    padding: 0% 10%;
+}
+
+#Blog-content {
+    display: flex;
+    flex-direction: row;
+    padding: 30px 6%;
+}
+
+#Blog-content .left-content {
+    width: 65%;
+    height: auto;
+}
+
+#Blog-content .right-content {
+    width: 50%;
+    padding: 0px 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+#Blog-content .right-content .title {
+    width: 100%;
+    background-color: red;
+    padding: 3px;
+    text-align: center;
+    color: white;
+    margin-bottom: 3px;
+}
+
+#Blog-content .right-content ul li {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3px 0;
+}
+
+#Blog-footer {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 10px 7%;
+    justify-content: space-between;
+}
+
+#Blog-footer .left-footer {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid gray;
+    border-radius: 3px;
+    padding: 5%;
+    width: 100%;
+    margin: 20px 0;
+}
+
+#Blog-footer .right-footer {
+    text-align: justify;
+    width: 100%;
+    overflow-y: scroll;
+    border: 2px solid rgb(144, 144, 144);
+    padding: 0 3%;
+    height: 315px;
+    border-radius: 3px;
+}
+
+#map {
+    padding: 30px 50px;
+}
+
+#contact {
+    padding: 5px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#contact .right-contact form input, #contact .right-contact form textarea {
+    padding: 7px 7px;
+    margin: 2px 0px;
+    width: 100%;
+}
+}

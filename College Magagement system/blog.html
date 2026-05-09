@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
+
+
+    <link rel="stylesheet" href="style.css">
+    <title>Courses Page</title>
+</head>
+<body>
+    
+    <section id="page-header">
+        <div id="header">
+            <div class="logo"><img src="images/logo.png" alt=""></div>
+
+            <div class="menu-btn">☰</div>
+            <div class="navbar">
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="courses.html">Courses</a>
+                <a href="#">Blog</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+
+        <div class="content">
+            <h2>Our Certificate & Online Programs For 2024</h2>
+        </div>
+    </section>
+
+    <section id="Blog-content">
+        <div class="left-content">
+            <img src="images/certificate.jpg" alt="">
+        </div>
+        
+        <div class="right-content">
+            <div class="title">Post Categories</div>
+
+            <ul>
+                <li><span>Business Analytics</span><span>21</span></li>
+                <li><span>Data Science</span><span>15</span></li>
+                <li><span>Machine Learning</span><span>23</span></li>
+                <li><span>Computer Science</span><span>30</span></li>
+                <li><span>AutoCAD</span><span>35</span></li>
+                <li><span>Journalism</span><span>12</span></li>
+                <li><span>Commerce</span><span>30</span></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="Appointment">
+        <div class="appointment-button">
+            <button class="button" data-bs-toggle="modal" data-bs-target="#myModal">Appointment</button>
+        </div>
+
+        <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+        <div class="modal-content">
+
+        <!-- Header -->
+        <div class="modal-header">
+            <h5 class="modal-title">Appointment-Form</h5>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <!-- Body -->
+        <div class="modal-body">
+        <form action="appointment.php" method="post">
+            <label for="Full Name">Full Name</label>
+            <input type="text" name="name" placeholder="Enter Your Name" required>
+
+            <label for="Email Address">Email Address</label>
+            <input type="email" name="email" placeholder="Enter Your email" required>
+
+            <label for="Phone Nmuber">Phone Nmuber</label>
+            <input type="text" name="phone_no" placeholder="Enter Your Phone Nmuber" required>
+
+            <label for="Department/Program of Interest">Department/Program of Interest</label>
+            <select class="form-select" name="department">
+
+                <option selected>Select Department</option>
+
+                <optgroup label="Engineering">
+                    <option>Computer Science</option>
+                    <option>Mechanical</option>
+                    <option>Civil</option>
+                </optgroup>
+
+                <optgroup label="Medical">
+                    <option>MBBS</option>
+                    <option>BDS</option>
+                    <option>Nursing</option>
+                </optgroup>
+
+                <optgroup label="Management">
+                    <option>BBA</option>
+                    <option>MBA</option>
+                </optgroup>
+
+            </select>
+
+            <label for="Preferred Date">Preferred Date</label>
+            <input type="datetime-local" name="preferred_date" placeholder="Select data">
+
+            <label for="Preferred Time" name="preferred_time">Preferred Time</label>
+            <select class="form-select">
+                    <option>9:00 AM</option>
+                    <option>10:00 AM</option>
+                    <option>11:00 AM</option>
+                    <option>1:00 PM</option>
+                    <option>3:00 PM</option>
+                </optgroup>
+            </select>
+
+            <label for="Message (optional)">Message (optional)</label>
+            <textarea name="message" rows="5" cols="30" placeholder="Write your message here"></textarea>
+
+                    <!-- Footer -->
+
+            <div class="modal-footer">
+                <button class="btn btn-secondary" name="submit">
+                    Book Appointment
+                </button>
+
+                <button class="btn btn-secondary" data-bs-dismiss="modal">
+                    Close
+                </button>
+            </div>
+        </form>
+        </div>
+
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="Blog-footer">
+        <div class="left-footer">
+            <div class="footer-form-title">
+                Leave a Comment
+            </div>
+
+            <div class="comment-form">
+                <form action="contact.php" method="post">
+                    <input type="text" name="name" placeholder="Enter Name" required>
+                    <input type="email" name="email" placeholder="Enter Email" required>
+                    <input type="text" name="subject" placeholder="subject" required>
+                    <textarea name="message" cols="50" placeholder="Your commnet"></textarea>
+                    <button name="submit">Post Comment</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="right-footer">
+            <div class="title">
+            <h2>Our Certificate & Online Program For 2024</h2>
+        </div>
+
+        <div class="paragraph">
+            <p>Lorem ipsum dolor, sit amet consectetur 
+                adipisicing elit. Blanditiis aut molestias, 
+                maxime quidem accusantium voluptatem 
+                nulla repellendus quo vero explicabo.
+            </p>
+
+            <p>Lorem ipsum, dolor sit amet consectetur 
+                adipisicing elit. Ratione quaerat 
+                perspiciatis cumque praesentium itaque 
+                adipisci, doloribus ea iure dolore eos libero, 
+                ex saepe fuga natus minima nobis maxime corrupti 
+                ducimus debitis laborum officia nostrum? Ullam 
+                repellat, nemo qui, excepturi nulla officiis 
+                incidunt quasi ad ducimus aspernatur amet sit 
+                iste! Officia quam quas sit, iusto vero magni 
+                consectetur dolore deserunt ea!
+            </p>
+
+            <p>Lorem ipsum dolor, sit amet consectetur 
+                adipisicing elit. Error iure natus animi 
+                odit nostrum. At incidunt distinctio magnam 
+                esse veritatis sint laborum exercitationem 
+                quam maiores animi sunt, non, unde aperiam? 
+                Tempore iure laborum error nesciunt numquam 
+                aliquid officiis tempora corporis!
+            </p>
+
+            <p>Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Distinctio est corporis 
+                mollitia voluptatem pariatur accusantium 
+                placeat porro ipsum ratione repudiandae.
+            </p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur 
+                adipisicing elit. Voluptas eveniet doloremque 
+                omnis odio nulla sit, optio qui? Tempora dolor 
+                consectetur natus rerum ipsum, iusto voluptatum 
+                aspernatur necessitatibus atque, qui sit.
+            </p>
+
+            <p>Lorem ipsum dolor, sit amet consectetur 
+                adipisicing elit. Blanditiis aut molestias, 
+                maxime quidem accusantium voluptatem 
+                nulla repellendus quo vero explicabo.
+            </p>
+        </div>
+        
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>    
+</body>
+</html>
