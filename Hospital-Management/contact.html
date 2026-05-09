@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- header section -->
+    <header id="header">
+        <div class="logo"><img src="images/logo3.png" alt=""></div>
+
+        <div class="menu-btn">☰</div>
+        <div class="navbar">
+            <a href="home.html">Home</a>
+            <a href="home.html#About">About</a>
+            <a href="home.html#services">Service</a>
+            <a href="blog.html">Blog</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <div class="appointment">
+            <button onclick="openForm()" class="Appointment-button b1" >Make Appointment</button>
+        </div>
+        
+        <!-- Hiddent form page -->
+        <div id="formPage">
+            <h2>Appointment Form</h2>
+            <form method="post" action="appointment_form.php" >
+                <input type="text" name="first" placeholder="First Name" required><br><br>
+                <input type="text" name="second" placeholder="Second Name" required><br><br>
+                <input type="email" name="email" placeholder="Email" required><br><br>
+                <input type="text" name="contact" placeholder="Contact Number" required><br><br>
+
+                <label for="Appointment-date">Appointment-Date</label><br>
+                <input type="date" name="appointment_dob" placeholder="Appointment Date" required><br><br>
+                <label for="date">Date of Birth</label><br>
+                <input type="date" name="dob" placeholder="Date of Birth"><br><br>
+
+                <p>Select Gender:</p>
+
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                
+
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label><br><br>
+
+                <div class="submition-button">
+                    <button type="submit" name="submit">Submit</button><br>
+                    <button type="button" onclick="goBack()">Back</button>
+                </div>
+                
+            </form>
+        </div>
+    </section>
+    </header>
+
+    <!-- contact-section -->
+    <section id="contact">
+        <div class="contact-title">
+            <h2>Contact Us</h2>
+        </div>
+
+        <section class="contact-content">
+            <div class="left-content">
+            <div class="contact-form">
+                <div class="formQuery">Submit Query</div>
+
+                <form method="post" action="contact.php">
+                    <div class="form1">
+                        <input type="text" name="username" placeholder="Your name">
+                        <input type="text" name="email" placeholder="Email id">
+                    </div>
+
+                    <input type="text" name="contact_no" placeholder="contact">
+                    <input type="text" name="subject" placeholder="subject">
+                    <textarea name="message" placeholder="message" rows="5" cols="30" ></textarea>
+                    <button type="submit" name="submit" class="contact-button" >Submit</button>
+                </form>
+                </div>
+            </div>
+        
+            <div class="right-content">
+                <div class="content1">
+                    <h2>Get In Touch</h2>
+                    <p>Popular started its journey in June 1983 and within few 
+                    days due to its accuracy of the reports and quality of 
+                    the service, Popular became an unparallel symbol of 
+                    reliability and trust from the end of respective doctors 
+                    and the people of our country. To get any service and support 
+                    from us, please contact us.</p>
+                </div>
+
+                <div class="content2">
+                    <h2>Our Office</h2>
+                    <div class="Address">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h3>Address: </h3>
+                        <span>House: 08, Road: 02, Dhanmondi, Dhaka-1205, Bangladesh</span>
+                    </div>
+
+                    <div class="email">
+                        <i class="fa-solid fa-envelope"></i>
+                        <h3>Email: </h3>
+                        <span>abcd@gamil.com</span>
+                    </div>
+
+                    <div class="hotline">
+                        <i class="fa-solid fa-phone-flip"></i>
+                        <h3>hotline: </h3>
+                        <span>0123456789</span>
+                    </div>
+                </div> 
+            </div>
+        </section>  
+    </section>
+
+    <!-- Appointment-button section -->
+    <section id="Appointment">
+        <button onclick="openForm()" class="Appointment-button">Appointment</button>
+        
+        <!-- Hiddent form page -->
+        <div id="formPage">
+            <h2>Appointment Form</h2>
+            <form method="post" action="appointment_form.php" >
+                <input type="text" name="first" placeholder="First Name" required><br><br>
+                <input type="text" name="second" placeholder="Second Name" required><br><br>
+                <input type="email" name="email" placeholder="Email" required><br><br>
+                <input type="text" name="contact" placeholder="Contact Number" required><br><br>
+
+                <label for="Appointment-date">Appointment-Date</label><br>
+                <input type="date" name="appointment_dob" placeholder="Appointment Date" required><br><br>
+                <label for="date">Date of Birth</label><br>
+                <input type="date" name="dob" placeholder="Date of Birth"><br><br>
+
+                <p>Select Gender:</p>
+
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                
+
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label><br><br>
+
+                <div class="submition-button">
+                    <button type="submit" name="submit">Submit</button><br>
+                    <button type="button" onclick="goBack()">Back</button>
+                </div>
+                
+            </form>
+        </div>
+    </section>
+
+    <!-- dummy-links section -->
+    <section id="dummy-links">
+        <div class="links">
+            <h2>Dummy Links</h2>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+        </div>
+
+        <div class="links">
+            <h2>Dummy Links</h2>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+        </div>
+
+        <div class="links">
+            <h2>Dummy Links</h2>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+        </div>
+
+        <div class="links">
+            <h2>Dummy Links</h2>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+        </div>
+
+        <div class="links">
+            <h2>Dummy Links</h2>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+        </div>
+
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>

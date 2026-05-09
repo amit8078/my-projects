@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog-page</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- header -->
+    <header id="header">
+        <div class="logo"><img src="images/logo3.png" alt=""></div>
+
+        <div class="menu-btn">☰</div>
+        <div class="navbar">
+            <a href="home.html">Home</a>
+            <a href="home.html#About">About</a>
+            <a href="home.html#services">Service</a>
+            <a href="#">Blog</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="appointment">
+            <button onclick="openForm()" class="Appointment-button b1" >Make Appointment</button>
+        </div>
+        
+        <!-- Hiddent form page -->
+        <div id="formPage">
+            <h2>Appointment Form</h2>
+            <form method="post" action="appointment_form.php" >
+                <input type="text" name="first" placeholder="First Name" required><br><br>
+                <input type="text" name="second" placeholder="Second Name" required><br><br>
+                <input type="email" name="email" placeholder="Email" required><br><br>
+                <input type="text" name="contact" placeholder="Contact Number" required><br><br>
+
+                <label for="Appointment-date">Appointment-Date</label><br>
+                <input type="date" name="appointment_dob" placeholder="Appointment Date" required><br><br>
+                <label for="date">Date of Birth</label><br>
+                <input type="date" name="dob" placeholder="Date of Birth"><br><br>
+
+                <p>Select Gender:</p>
+
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                
+
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label><br><br>
+
+                <div class="submition-button">
+                    <button type="submit" name="submit">Submit</button><br>
+                    <button type="button" onclick="goBack()">Back</button>
+                </div>
+                
+            </form>
+        </div>
+    </section>
+    </header>
+
+    <!-- Blog page -->
+    <section id="blog">
+        <div class="blog-title">Blog</div>
+
+        <section class="blog-carts">
+            <div class="blog-cart">
+                <div class="image">
+                    <img src="images/trapedGasInChest.jpeg" alt="">
+                </div>
+
+                <div class="blog-content">
+                    <h2>Trapped Gas in Chest: causes, 
+                        Symptoms & BEst Treatment Options</h2>
+
+                    <p>Introduction Gas in Chest can 
+                        be confusing, stressful, and 
+                        may result in fear of 
+                        complications caused by the 
+                        condition (e.g., heart attack). 
+                        Many individuals misinterpret</p>
+
+                    <a href="#">Read More »</a>
+                </div>
+            </div>
+
+            <div class="blog-cart">
+                <div class="image">
+                    <img src="images/trapedGasInChest.jpeg" alt="">
+                </div>
+
+                <div class="blog-content">
+                    <h2>Trapped Gas in Chest: causes, 
+                        Symptoms & BEst Treatment Options</h2>
+
+                    <p>Introduction Gas in Chest can 
+                        be confusing, stressful, and 
+                        may result in fear of 
+                        complications caused by the 
+                        condition (e.g., heart attack). 
+                        Many individuals misinterpret</p>
+
+                    <a href="#">Read More »</a>
+                </div>
+            </div>
+
+            <div class="blog-cart">
+                <div class="image">
+                    <img src="images/trapedGasInChest.jpeg" alt="">
+                </div>
+
+                <div class="blog-content">
+                    <h2>Trapped Gas in Chest: causes, 
+                        Symptoms & BEst Treatment Options</h2>
+
+                    <p>Introduction Gas in Chest can 
+                        be confusing, stressful, and 
+                        may result in fear of 
+                        complications caused by the 
+                        condition (e.g., heart attack). 
+                        Many individuals misinterpret</p>
+
+                    <a href="#">Read MOre »</a>
+                </div>
+            </div>
+
+            <div class="blog-cart">
+                <div class="image">
+                    <img src="images/trapedGasInChest.jpeg" alt="">
+                </div>
+
+                <div class="blog-content">
+                    <h2>Trapped Gas in Chest: causes, 
+                        Symptoms & BEst Treatment Options</h2>
+
+                    <p>Introduction Gas in Chest can 
+                        be confusing, stressful, and 
+                        may result in fear of 
+                        complications caused by the 
+                        condition (e.g., heart attack). 
+                        Many individuals misinterpret</p>
+
+                    <a href="#">Read More »</a>
+                </div>
+            </div>
+
+            <div class="blog-cart">
+                <div class="image">
+                    <img src="images/trapedGasInChest.jpeg" alt="">
+                </div>
+
+                <div class="blog-content">
+                    <h2>Trapped Gas in Chest: causes, 
+                        Symptoms & BEst Treatment Options</h2>
+
+                    <p>Introduction Gas in Chest can 
+                        be confusing, stressful, and 
+                        may result in fear of 
+                        complications caused by the 
+                        condition (e.g., heart attack). 
+                        Many individuals misinterpret</p>
+
+                    <a href="#">Read More »</a>
+                </div>
+            </div>
+
+            <div class="blog-cart">
+                <div class="image">
+                    <img src="images/trapedGasInChest.jpeg" alt="">
+                </div>
+
+                <div class="blog-content">
+                    <h2>Trapped Gas in Chest: causes, 
+                        Symptoms & BEst Treatment Options</h2>
+
+                    <p>Introduction Gas in Chest can 
+                        be confusing, stressful, and 
+                        may result in fear of 
+                        complications caused by the 
+                        condition (e.g., heart attack). 
+                        Many individuals misinterpret</p>
+
+                    <a href="#">Read More »</a>
+                </div>
+            </div>
+
+            <div class="blog-cart">
+                <div class="image">
+                    <img src="images/trapedGasInChest.jpeg" alt="">
+                </div>
+
+                <div class="blog-content">
+                    <h2>Trapped Gas in Chest: causes, 
+                        Symptoms & BEst Treatment Options</h2>
+
+                    <p>Introduction Gas in Chest can 
+                        be confusing, stressful, and 
+                        may result in fear of 
+                        complications caused by the 
+                        condition (e.g., heart attack). 
+                        Many individuals misinterpret</p>
+
+                    <a href="#">Read More »</a>
+                </div>
+            </div>
+
+            <div class="blog-cart">
+                <div class="image">
+                    <img src="images/trapedGasInChest.jpeg" alt="">
+                </div>
+
+                <div class="blog-content">
+                    <h2>Trapped Gas in Chest: causes, 
+                        Symptoms & BEst Treatment Options</h2>
+
+                    <p>Introduction Gas in Chest can 
+                        be confusing, stressful, and 
+                        may result in fear of 
+                        complications caused by the 
+                        condition (e.g., heart attack). 
+                        Many individuals misinterpret</p>
+
+                    <a href="#">Read More »</a>
+                </div>
+            </div>
+
+            <div class="blog-cart">
+                <div class="image">
+                    <img src="images/trapedGasInChest.jpeg" alt="">
+                </div>
+
+                <div class="blog-content">
+                    <h2>Trapped Gas in Chest: causes, 
+                        Symptoms & BEst Treatment Options</h2>
+
+                    <p>Introduction Gas in Chest can 
+                        be confusing, stressful, and 
+                        may result in fear of 
+                        complications caused by the 
+                        condition (e.g., heart attack). 
+                        Many individuals misinterpret</p>
+
+                    <a href="#">Read More »</a>
+                </div>
+            </div>
+
+            <div class="blog-cart">
+                <div class="image">
+                    <img src="images/trapedGasInChest.jpeg" alt="">
+                </div>
+
+                <div class="blog-content">
+                    <h2>Trapped Gas in Chest: causes, 
+                        Symptoms & BEst Treatment Options</h2>
+
+                    <p>Introduction Gas in Chest can 
+                        be confusing, stressful, and 
+                        may result in fear of 
+                        complications caused by the 
+                        condition (e.g., heart attack). 
+                        Many individuals misinterpret</p>
+
+                    <a href="#">Read More »</a>
+                </div>
+            </div>
+
+            <div class="blog-cart">
+                <div class="image">
+                    <img src="images/trapedGasInChest.jpeg" alt="">
+                </div>
+
+                <div class="blog-content">
+                    <h2>Trapped Gas in Chest: causes, 
+                        Symptoms & BEst Treatment Options</h2>
+
+                    <p>Introduction Gas in Chest can 
+                        be confusing, stressful, and 
+                        may result in fear of 
+                        complications caused by the 
+                        condition (e.g., heart attack). 
+                        Many individuals misinterpret</p>
+
+                    <a href="#">Read More »</a>
+                </div>
+            </div>
+
+            <div class="blog-cart">
+                <div class="image">
+                    <img src="images/trapedGasInChest.jpeg" alt="">
+                </div>
+
+                <div class="blog-content">
+                    <h2>Trapped Gas in Chest: causes, 
+                        Symptoms & BEst Treatment Options</h2>
+
+                    <p>Introduction Gas in Chest can 
+                        be confusing, stressful, and 
+                        may result in fear of 
+                        complications caused by the 
+                        condition (e.g., heart attack). 
+                        Many individuals misinterpret</p>
+
+                    <a href="#">Read More »</a>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Appointment-button -->
+    <section id="Appointment">
+        <button onclick="openForm()" class="Appointment-button">Appointment</button>
+        
+        <!-- Hiddent form page -->
+        <div id="formPage">
+            <h2>Appointment Form</h2>
+            <form method="post" action="appointment_form.php" >
+                <input type="text" name="first" placeholder="First Name" required><br><br>
+                <input type="text" name="second" placeholder="Second Name" required><br><br>
+                <input type="email" name="email" placeholder="Email" required><br><br>
+                <input type="text" name="contact" placeholder="Contact Number" required><br><br>
+
+                <label for="Appointment-date">Appointment-Date</label><br>
+                <input type="date" name="appointment_dob" placeholder="Appointment Date" required><br><br>
+                <label for="date">Date of Birth</label><br>
+                <input type="date" name="dob" placeholder="Date of Birth"><br><br>
+
+                <p>Select Gender:</p>
+
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                
+
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label><br><br>
+
+                <div class="submition-button">
+                    <button type="submit" name="submit">Submit</button><br>
+                    <button type="button" onclick="goBack()">Back</button>
+                </div>
+                
+            </form>
+        </div>
+    </section>
+
+    <!-- dummy-links section -->
+    <section id="dummy-links">
+        <div class="links">
+            <h2>Dummy Links</h2>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+        </div>
+
+        <div class="links">
+            <h2>Dummy Links</h2>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+        </div>
+
+        <div class="links">
+            <h2>Dummy Links</h2>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+        </div>
+
+        <div class="links">
+            <h2>Dummy Links</h2>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+        </div>
+
+        <div class="links">
+            <h2>Dummy Links</h2>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+        </div>
+
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>

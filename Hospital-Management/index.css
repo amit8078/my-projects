@@ -1,0 +1,1048 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 60px;
+    box-shadow: 0 5px 15px rgb(0, 0, 0.06);
+    background: #e3e6f3;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#header .menu-btn{
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+#header .logo img{
+    /* justify-content: flex-start; */
+    width: 120px;
+    height: auto;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar a::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 3px;        
+    width: 0%;
+    height: 3px;
+    background-color: #0bdacc;
+    transform: translateX(-68%);
+    transition: 0.3s;
+}
+
+.navbar a:hover::after{
+    width: 60%;
+}
+
+.navbar a {
+    position: relative;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar a:hover {
+    transform: scale(1.03);
+    transition: all 1s ease;
+}
+
+#header .appointment button{
+    padding: 10px 13px;
+    background-color: #2fa19a;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+#header .appointment:hover{
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+}
+
+#main-body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("images/blurbg1.jpg");
+    /* padding: 50px; */
+}
+
+#main-body .left-content {
+    width: 35%;
+    padding-left: 70px;
+}
+
+#main-body .left-content .description  span{
+    color: #2fa19a;
+    font: 200;
+    font-size: 25px;
+}
+
+#main-body .left-content .description  h2{
+    color: black;
+    font-size: 50px;
+}
+
+#main-body .left-content .description  .main-content{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#main-body .left-content .left-content-button{
+    display: flex;
+    gap: 15px;
+    padding-top: 10px;
+}
+
+#main-body .left-content .left-content-button .button{
+    padding: 10px 13px;
+    background-color: #0bdacc;
+    border: none;
+    border-radius: 12px;
+    color: #fff;
+    transition: 1s;
+}
+
+#main-body .left-content .left-content-button .button:hover{
+    background-color: yellow;
+    color: black;
+    transform: scale(1.2);
+}
+
+#main-body .right-content{
+    width: 65%;
+}
+
+#main-body .right-content img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.teconology{
+    display: flex;
+    justify-content: space-evenly;
+    display: flex;
+    padding: 20px;
+    margin-right: 10%;
+    margin-left: 4%;
+    gap: 40px;
+}
+
+.teconology .inner-technology{
+    padding: 35px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 5px 10px rgba(44, 42, 42, 0.879);
+    /* margin-top: -100px; */
+    top: -100px;
+    position: relative;
+    z-index: 10;
+    background-image: url("images/backgroung-pattern-1.png");
+}
+
+.teconology .inner-technology i{
+    font-size: 50px;
+}
+
+.teconology .inner-technology h2{
+    padding: 15px 0px;
+    font-size: 30px;
+}
+
+.teconology .inner-technology p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.teconology .inner-technology{
+    position: relative;
+    overflow: hidden;
+    background: white;
+    z-index: 1;
+}
+
+.teconology .inner-technology::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #0bdacc;
+    transition: width 1s ease;
+    z-index: -1;
+}
+
+.teconology .inner-technology:hover::before{
+    width: 100%;
+}
+
+/* about */
+#About{
+    background-image: url("images/backgroung-pattern-1.png");
+    background-size: 85%;
+    border-image-repeat: repeat;
+    object-fit:cover;
+    width: 100%;
+    height: auto;
+}
+
+.about-title{
+    text-align: center;
+    margin-top: -40px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #0bdacc;
+}
+
+.about-title::after{
+    content: "";
+    display: block;
+    width: 180px;
+    height: 3px;
+    background: yellow;
+    margin: 10px auto;
+}
+
+.about-body {
+    display: flex;
+    padding-top: 50px;
+    
+}
+
+.about-body .aboutImage{
+    width: 50%;
+    height: 430px;
+}
+
+.about-body img{
+    width: 50%;
+    height: auto;
+    margin-left: 250px;
+}
+
+.about-body .about-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 35%;
+    font-weight: lighter;
+}
+
+.about-body .about-content h2{
+    font-size: 30px;
+} 
+
+.about-body .about-content button{
+    font-size: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    border-color:#2fa19a;
+} 
+
+.about-body .about-content button:hover{
+    color:#fff;
+    background-color: #0bdacc;
+}
+
+
+/* Doctors */
+#doctors{
+    background-image: url("images/Biological\ Science.jpg");
+    /* background-size: 230%; */
+    padding: 20px 0;
+}
+
+#doctors .doctor-title{
+    padding: 20px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: #0bdacc;
+}
+
+#doctors .doctors-profile{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
+    gap: 30px;
+}
+
+#doctors .doctors-profile .doctor-card{
+    border-radius: 15px;
+    position: relative;
+    border: 5px solid #0bdacc;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+#doctors .doctors-profile .doctor-card:hover{
+    transform: scale(1.05);
+    transition: all 1s ease;
+}
+
+#doctors .doctors-profile .doctor-card::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70%;
+
+    background: linear-gradient(to top, white, transparent);
+}
+
+#doctors .doctors-profile .doctor-card img{
+    width: 100%;
+    display: block;
+}
+
+#doctors .doctors-profile .doctor-card h3{
+    position: absolute;   /* makes it move over image */
+    top: 85%;            /* adjust position */
+    left: 38%;
+    margin: 0;
+    font-size: 25px;
+    color: black;
+    background: white; 
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+
+/* Services */
+#services .service-title{
+    color: #0bdacc;
+    font-weight: bold;
+    text-align: center;
+    font-size: 40px;
+    margin: 30px;
+}
+
+#services .service-carts{
+    margin: 0 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+
+#services .service-carts .service-cart{
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 5px;
+    padding: 40px;
+    width: 30%;
+    height: auto;
+}
+
+#services .service-carts .service-cart:hover{
+
+    transform: translatey(-5px);
+    transition: all 1s ease;
+}
+
+#services .service-carts .service-cart i{
+    font-size: 50px;
+    border: 2px solid #0bdacc;
+    color: #0bdacc;
+    padding: 15px;
+    border-radius: 50%;
+    margin: 5px 0px;
+}
+
+#services .service-carts .service-cart h3{
+    font-size: 25px;
+    margin: 10px;
+}
+
+#services .service-carts .service-cart i:hover{
+    border-radius: 0%;
+    background: #0bdacc;
+    color: white;
+}
+
+/* constumer-review */
+#customers .customers-title{
+    margin: 30px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #0bdacc;
+}
+
+#customers .customer-carts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 10%;
+    gap: 40px;
+    overflow: hidden;
+}
+
+#customers .customer-carts .customer-cart{
+    border-radius: 0px 48px 0px 0px;
+    border: 2px solid #2fa19a;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    width: 30%;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+#customers .customer-carts .customer-cart:hover{
+    border-radius: 50px 0px 0px 0px;
+}
+
+#customers .customer-carts .customer-cart img{
+    padding: 10px;
+    border-radius: 50%;   
+    width: 40%;
+    height: auto;
+}
+
+#customers .customer-carts .customer-cart h4{
+    font-size: 25px; 
+}
+
+#customers .customer-carts .customer-cart .i-tag{
+    margin: 10px; 
+}
+
+#customers .customer-carts .customer-cart .i-tag i{
+    color: yellow;
+    padding: 3px;
+}
+
+/* dummy-links */
+#dummy-links{
+        margin-top: 20px ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    background-color:rgb(32, 179, 187);
+    padding: 20px;
+}
+
+#dummy-links .links{
+    display: flex;
+    flex-direction: column;
+}
+
+#dummy-links .links h2{
+    padding: 10px;
+    font-size: 30px;
+}
+
+#dummy-links .links a{
+    padding: 2px;
+    color: black;
+    text-decoration: none;
+
+}
+
+/* Blog section */
+#blog .blog-title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 20px;
+}
+
+#blog .blog-carts{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+#blog .blog-carts .blog-cart{
+    width: 30%;
+    border: 3px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#blog .blog-carts .blog-cart .image img{
+    width: 100%;
+    height: auto;
+}
+
+#blog .blog-carts .blog-cart .blog-content{
+    background-color: white;
+    padding: 15px;
+    width: 100%;
+}
+
+#blog .blog-carts .blog-cart .blog-content h2{
+    padding-bottom: 20px;
+    font-size: 25px;
+    color: red;
+}
+
+#blog .blog-carts .blog-cart .blog-content a{
+    display: block;
+    padding-top: 15px;
+    text-decoration: none;
+    color: red;
+}
+
+#blog .blog-carts .blog-cart:hover{
+    width: 30.2%;
+    transform: translatey(-5px);
+    transition: all 1s ease;
+}
+
+/* Contact-page */
+#contact .contact-title{
+    text-align: center;
+    padding: 70px 0px;
+    font-size: 25px;
+    background-image: url("images/background-image-pattern-4.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#contact .contact-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#contact .contact-content .left-content{
+    width: 50%;
+    padding: 20px;
+}
+
+#contact .contact-content .right-content{
+    width: 50%;
+    padding: 20px;
+}
+
+
+#contact .contact-form .formQuery{
+    text-align: center;
+    margin: 15px 0;
+    margin-left: 100px;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+#contact .contact-form form{
+    margin-left: 100px;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#contact .contact-form form .form1{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap; 
+}
+
+
+#contact .contact-form form .form1 input{
+    width: 49%;
+    height: 35px;
+    padding: 0px 5px;
+}
+
+#contact .contact-form form  input{
+    width: 100%;
+    height: 35px;
+    padding: 0px 5px;
+}
+
+#contact .contact-form form textarea{
+    width: 100%;
+    height: 100px;
+    padding: 0px 5px;
+}
+
+#contact .contact-form form .contact-button{
+    width: 80px;
+    padding: 10px;
+    background-color: #0bdacc;
+    border-color: #0bdacc;
+}
+
+#contact .contact-content h2{
+    text-align: start;
+    margin-top: 19px;
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+#contact .contact-content .right-content{
+    padding: 0px 53px;
+    padding-right: 150px;
+    margin-top: 20px;
+
+}
+
+#contact .contact-content .content1 h2{
+    color: green;
+}   
+
+#contact .contact-content .content2{
+    margin-top: 60px;
+
+}
+
+#contact .contact-content .content2 h2{
+    color: green;
+    gap: 40px;
+
+}
+
+#contact .contact-content .content2 .Address{
+    padding: 5px 0px;
+}
+
+#contact .contact-content .content2 .email{
+    padding: 5px 0px;
+}
+
+
+#contact .contact-content .content2 .hotline{
+    margin: 5px 0px;
+}
+
+
+#contact .contact-content .content2 i{
+    color: green;
+    border: 1px solid green;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+#contact .contact-content .content2 h3{
+    display: inline;
+}
+
+
+/* Appointment-button */
+#Appointment{
+    position: relative;
+    
+}
+
+#Appointment .Appointment-button{
+    position: fixed;
+    left: 96.2%;
+    bottom: 30%;
+    transform: rotate(-90deg);
+    padding: 5px;
+    z-index: 1000;
+}
+
+#formPage {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 300px;
+    background: rgb(190, 122, 122);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+#formPage .submition-button{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 45%;
+}
+
+#formPage .submition-button button{
+    color: white;
+    background: #0bdacc;
+    padding: 5px;
+    border-radius: 5px;
+    border-color: #0bdacc;
+}
+
+#formPage.active{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+
+/* responsive for tablet */
+@media (max-width: 1024px){
+    
+#main-body {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#main-body .left-content .description{
+    width: 150%;
+}
+
+#main-body .left-content .description  span {
+    color: #2fa19a;
+    font-size: 25px;
+}
+
+#main-body .left-content .description  h2 {
+    color: black;
+    font-size: 42px;
+}
+
+
+#main-body .right-content img {
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+}
+
+#main-body .right-content {
+    width: 60%;
+    margin-left: 10%;
+}
+
+.teconology {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin-right: 0;
+    margin-left: 4%;
+    gap: 40px;
+}
+
+.teconology .inner-technology {
+    padding: 30px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 5px 10px rgba(44, 42, 42, 0.879);
+    /* margin-top: -100px; */
+    top: -80px;
+    position: relative;
+    z-index: 3;
+}
+
+.about-body img {
+    width: 70%;
+    height: auto;
+    margin-left: 120px;
+}
+
+.about-body .about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 45%;
+    font-weight: lighter;
+}
+
+#services .service-carts {
+    margin: 0 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+#contact .contact-content .right-content {
+    padding: 0px 53px;
+    padding-right: 30px;
+    margin-top: 20px;
+}
+
+#contact .contact-content .content2 {
+    margin-top: 20px;
+}
+
+#Appointment .Appointment-button{
+    position: fixed;
+    left: 94.2%;
+    bottom: 30%;
+    transform: rotate(-90deg);
+    padding: 5px;
+    z-index: 1000;
+}
+
+
+}
+
+@media (max-width: 600px){
+    #header {
+    justify-content: space-evenly;
+    padding: 20px 30px;
+}
+
+#header .menu-btn{
+    display: block;
+}
+
+#header .navbar{
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    right: 0;
+    top: 70px;
+    background: white;
+    width: 170px;
+    padding: 10px;
+}
+
+#header .navbar.active{
+    display: flex;
+}
+
+#main-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("images/blurbg1.jpg");
+    padding: 20px;
+}
+
+#main-body .left-content .description{
+    width: 100%;
+    padding: 20px;
+}
+
+#main-body .left-content .description  span {
+    color: #2fa19a;
+    font-size: 25px;
+}
+
+#main-body .left-content .description  h2 {
+    color: black;
+    font-size: 40px;
+}
+
+#main-body .left-content {
+    margin-top: 5%;
+    text-align: center;
+    width: 105%;
+    padding-left: 10px;
+}
+
+#main-body .left-content .left-content-button {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding-top: 5px;
+}
+
+#main-body .right-content img {
+    width: 130%;
+    height: auto;
+    transform: translate(-65px);
+}
+
+.teconology {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-right: 10%;
+    margin-left: 4%;
+    gap: 30px;
+}
+
+.teconology .inner-technology {
+    padding: 30px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 5px 10px rgba(44, 42, 42, 0.879);
+
+    top: 0;
+    position: relative;
+    z-index: 0;
+}
+
+.about-title {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #0bdacc;
+}
+
+.about-body {
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+}
+
+.about-body img {
+    width: 100%;
+    height: auto;
+    margin-left: 130px;
+}
+
+.about-body .about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 50px;
+    width: 100%;
+    font-weight: lighter;
+}
+
+.about-body .aboutImage {
+    width: 50%;
+    height: 340px;
+}
+
+.about-body .about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    font-weight: lighter;
+    padding-bottom: 20px;
+}
+
+#services .service-carts {
+    margin: 0 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#services .service-carts .service-cart {
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 5px;
+    padding: 40px;
+    width: 100%;
+    height: auto;
+}
+
+#customers .customer-carts {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0 10%;
+    gap: 40px;
+    overflow: hidden;
+}
+
+#customers .customer-carts .customer-cart {
+    border-radius: 0px 48px 0px 0px;
+    border: 2px solid #2fa19a;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    width: 100%;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+#dummy-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    background-color: rgb(32, 179, 187);
+    padding: 5px;
+}
+
+#dummy-links .links h2 {
+    padding: 5px;
+    font-size: 25px;
+}
+
+/* blog-section */
+#blog .blog-carts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+#blog .blog-carts .blog-cart {
+    width: 90%;
+    margin: 0px 30px;
+    border: 3px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#contact .contact-content {
+    flex-direction: column; 
+}
+
+#contact .contact-content .left-content {
+    width: 100%;
+    padding: 30px;
+}
+
+#contact .contact-form .formQuery {
+    text-align: center;
+    margin: 15px 0;
+    margin-left: 30px;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+#contact .contact-form form {
+    margin-left: 30px;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact .contact-content .right-content {
+    width: 100%;
+}
+
+#contact .contact-content .right-content {
+    padding: 0px 53px;
+    padding-right: 30px;
+    margin-top: 0px;
+}
+
+#Appointment .Appointment-button{
+    position: fixed;
+    left: 90%;
+    bottom: 30%;
+    transform: rotate(-90deg);
+    padding: 5px;
+    z-index: 1000;
+}
+
+}

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Mangement System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Header section -->
+    <header id="header">
+        <div class="logo"><img src="images/logo3.png" alt=""></div>
+
+        <div class="menu-btn">☰</div>
+        <div class="navbar">
+            <a href="#">Home</a>
+            <a href="#About">About</a>
+            <a href="#services">Service</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="appointment">
+            <button onclick="openForm()" class="Appointment-button b1" >Make Appointment</button>
+        </div>
+        
+        <!-- Hiddent form page -->
+        <div id="formPage">
+            <h2>Appointment Form</h2>
+            <form method="post" action="appointment_form.php" >
+                <input type="text" name="first" placeholder="First Name" required><br><br>
+                <input type="text" name="second" placeholder="Second Name" required><br><br>
+                <input type="email" name="email" placeholder="Email" required><br><br>
+                <input type="text" name="contact" placeholder="Contact Number" required><br><br>
+
+                <label for="Appointment-date">Appointment-Date</label><br>
+                <input type="date" name="appointment_dob" placeholder="Appointment Date" required><br><br>
+                <label for="date">Date of Birth</label><br>
+                <input type="date" name="dob" placeholder="Date of Birth"><br><br>
+
+                <p>Select Gender:</p>
+
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                
+
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label><br><br>
+
+                <div class="submition-button">
+                    <button type="submit" name="submit">Submit</button><br>
+                    <button type="button" onclick="goBack()">Back</button>
+                </div>
+                
+            </form>
+        </div>
+    </section>
+    </header>
+
+    <!-- Main section -->
+    <main id="main-body">
+        <div class="left-content">
+            <div class="description">
+                <span>Welcome To Hospital Management</span>
+                <h2>We Take Care Our Patients Healths</h2>
+                <p class="main-content">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sapiente, similique? Deleniti fugit ipsam quia eveniet
+                ratione nostrum ut et? Tempore?
+                </p>
+            </div>
+
+            <div class="left-content-button">
+                <div class="readbutton"><button class="button">Read More</button></div>
+                <div onclick="openForm()" class="appointmentbutton"><button class="button">Appointment</button></div>
+
+                <div id="formPage">
+            <h2>Appointment Form</h2>
+            <form method="post" action="appointment_form.php" >
+                <input type="text" name="first" placeholder="First Name" required><br><br>
+                <input type="text" name="second" placeholder="Second Name" required><br><br>
+                <input type="email" name="email" placeholder="Email" required><br><br>
+                <input type="text" name="contact" placeholder="Contact Number" required><br><br>
+
+                <label for="Appointment-date">Appointment-Date</label><br>
+                <input type="date" name="appointment_dob" placeholder="Appointment Date" required><br><br>
+                <label for="date">Date of Birth</label><br>
+                <input type="date" name="dob" placeholder="Date of Birth"><br><br>
+
+                <p>Select Gender:</p>
+
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                
+
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label><br><br>
+
+                <div class="submition-button">
+                    <button type="submit" name="submit">Submit</button><br>
+                    <button type="button" onclick="goBack()">Back</button>
+                </div>
+                
+            </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-content"><img src="images/hero2.png" alt=""></div>
+    </main>
+
+    <!-- techonology -->
+    <div class="teconology">
+
+        <div class="inner-technology">
+            <i class="fa-solid fa-hand-holding-heart"></i>
+            <h2>Quality & Safety</h2>
+            <p>Our Delmont hospital utilize state of teh art techonology and employs a team of true experts</p>
+        </div>
+
+        <div class="inner-technology">
+            <i class="fa-solid fa-handshake"></i>
+            <h2>Quality & Safety</h2>
+            <p>Our Delmont hospital utilize state of teh art techonology and employs a team of true experts</p>
+        </div>
+
+        <div class="inner-technology">
+            <i class="fa-solid fa-hands-holding-child"></i>
+            <h2>Quality & Safety</h2>
+            <p>Our Delmont hospital utilize state of teh art techonology and employs a team of true experts</p>
+        </div>
+
+    </div>
+
+    <!-- About section -->
+    <section id="About">
+        <h1 class="about-title">About Us</h1>
+    
+
+    <section class="about-body">
+            <div class="aboutImage"><img src="images/about1.png" alt=""></div>
+            <div class="about-content">
+                <h2>We're Setting Standards In Research What's More, Clinical Care.</h2>
+                <span>
+                    We provide the most full medical services, 
+                    So every person could have the portunity 0 recive qualitative medical help.
+                </span>
+
+                <p>Our clinic has grown to provide a world class 
+                    facility for the treatment of tooth loss, 
+                    Dental consmetics and bore advance restorative 
+                    dentisity. We are among the most qualified 
+                    implant providers in the AUS with iver 30 years 
+                    of uality training and experiences.</p>
+            
+                <div><button>Read More</button></div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Our doctor -->
+    <section id="doctors">
+        <div class="doctor-title">Our Doctors</div>
+
+        <section class="doctors-profile">
+            <div class="doctor-card">
+                <img src="images/team1.jpg" alt="">
+                    <h3>Mr Joe</h3>
+            </div>
+            <div class="doctor-card">
+                <img src="images/team2.jpg" alt="">
+                    <h3>Mr Joe</h3>
+            </div>
+            <div class="doctor-card">
+                <img src="images/team3.jpg" alt="">
+                    <h3>Mr Joe</h3>
+            </div>
+            <div class="doctor-card">
+                <img src="images/team4.jpg" alt="">
+                <h3>Mr Joe</h3>
+            </div>
+            <div class="doctor-card">
+                <img src="images/team5.jpg" alt="">
+                    <h3>Mr Joe</h3>
+            </div>
+            <div class="doctor-card">
+                <img src="images/team6.jpg" alt="">
+                    <h3>Mr Joe</h3>
+            </div>
+        </section>
+     </section>
+
+    <section id="services">
+        <div class="service-title">Our Services</div>
+
+        <section class="service-carts">
+            <div class="service-cart">
+                <i class="fa-solid fa-truck-medical"></i>
+                <h3>Health Check</h3>
+                <p>We offer extensive madical procedures to outbound 
+                    & inbound partients wgat it is and we are very pround 
+                    achievement staff.</p>
+            </div>
+
+            <div class="service-cart">
+                <i class="fa-solid fa-hospital"></i>
+                <h3>Health Check</h3>
+                <p>We offer extensive madical procedures to outbound 
+                    & inbound partients wgat it is and we are very pround 
+                    achievement staff.</p>
+            </div>
+
+            <div class="service-cart">
+                <i class="fa-regular fa-heart"></i>
+                <h3>Health Check</h3>
+                <p>We offer extensive madical procedures to outbound 
+                    & inbound partients wgat it is and we are very pround 
+                    achievement staff.</p>
+            </div>
+
+            <div class="service-cart">
+                <i class="fa-solid fa-truck-medical"></i>
+                <h3>Health Check</h3>
+                <p>We offer extensive madical procedures to outbound 
+                    & inbound partients wgat it is and we are very pround 
+                    achievement staff.</p>
+            </div>
+
+            <div class="service-cart">
+                <i class="fa-sharp fa-solid fa-hand-holding-droplet"></i>
+                <h3>Health Check</h3>
+                <p>We offer extensive madical procedures to outbound 
+                    & inbound partients wgat it is and we are very pround 
+                    achievement staff.</p>
+            </div>
+
+            <div class="service-cart">
+                <i class="fa-solid fa-user-doctor"></i>
+                <h3>Health Check</h3>
+                <p>We offer extensive madical procedures to outbound 
+                    & inbound partients wgat it is and we are very pround 
+                    achievement staff.</p>
+            </div>
+
+        </section>
+    </section>
+
+    <!-- customer section -->
+    <section id="customers">
+        <div class="customers-title">Our Customers Review</div>
+
+        <section class="customer-carts">
+            <div class="customer-cart">
+                <img src="images/pic1.png" alt="">
+                <h4>Lara John</h4>
+                <div class="i-tag">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>Optio quod assumenda similique provident 
+                    aliquid corrupti minima maaxima termpre! 
+                Quas lllo porro fuga consectetur repellat</p>
+            </div>
+
+            <div class="customer-cart">
+                <img src="images/pic2.png" alt="">
+                <h4>Lara John</h4>
+                <div class="i-tag">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>Optio quod assumenda similique provident 
+                    aliquid corrupti minima maaxima termpre! 
+                Quas lllo porro fuga consectetur repellat</p>
+            </div>
+
+            <div class="customer-cart">
+                <img src="images/pic3.png" alt="">
+                <h4>Lara John</h4>
+                <div class="i-tag">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                
+                <p>Optio quod assumenda similique provident 
+                    aliquid corrupti minima maaxima termpre! 
+                Quas lllo porro fuga consectetur repellat</p>
+            </div>
+        </section>
+    </section>
+
+    <!-- Appointment-button -->
+    <section id="Appointment">
+        <button onclick="openForm()" class="Appointment-button">Appointment</button>
+        
+        <!-- Hiddent form page -->
+        <div id="formPage">
+            <h2>Appointment Form</h2>
+            <form method="post" action="appointment_form.php" >
+                <input type="text" name="first" placeholder="First Name"><br><br>
+                <input type="text" name="second" placeholder="Second Name"><br><br>
+                <input type="email" name="email" placeholder="Email"><br><br>
+                <input type="text" name="contact" placeholder="Contact Number"><br><br>
+
+                <label for="Appointment-date">Appointment-Date</label><br>
+                <input type="date" name="appointment_dob" placeholder="Appointment Date" required><br><br>
+                <label for="date">Date of Birth</label><br>
+                <input type="date" name="dob" placeholder="Date of Birth"><br><br>
+
+                <p>Select Gender:</p>
+
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                
+
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label><br><br>
+
+                <div class="submition-button">
+                    <button type="submit" name="submit">Submit</button><br>
+                    <button onclick="goBack()">Back</button>
+                </div>
+                
+            </form>
+        </div>
+    </section>
+
+    <!-- dummy Link -->
+    <section id="dummy-links">
+        <div class="links">
+            <h2>Dummy Links</h2>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+        </div>
+
+        <div class="links">
+            <h2>Dummy Links</h2>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+        </div>
+
+        <div class="links">
+            <h2>Dummy Links</h2>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+        </div>
+
+        <div class="links">
+            <h2>Dummy Links</h2>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+        </div>
+
+        <div class="links">
+            <h2>Dummy Links</h2>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+        </div>
+
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
