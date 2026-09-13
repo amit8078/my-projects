@@ -1,0 +1,71 @@
+#bg .bg1{   
+    height: 520px;
+}
+
+#bg .bg1 img{
+    position: relative;
+    top: 100px;
+    width: 100%;
+    object-fit: cover,contain;
+    height: 400px;
+}
+
+#bg .bg2 h2{
+    text-align: center;
+    color: rgb(24, 141, 24);
+    font-size: 35px;
+    padding: 15px 0px;
+}
+
+#bg .bg2 p{
+    padding: 10px 180px;
+    font-size: 20px;
+    line-height: 33px;
+    text-align: justify;
+}
+
+#bg .bg3{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 200px;
+    flex-wrap: wrap;
+}
+
+#bg .bg3 .bg-img1 p{
+    text-align: center;
+    color: rgb(105, 95, 95);
+    font-size: 16px;
+}
+
+#bg .bg3 img{
+    width: 340px;
+    height: 340px;
+    padding: 15px 0;
+}
+
+@media (max-width: 1024px){
+    #bg .bg2 p {
+        padding: 3px 40px;
+        font-size: 20px;
+        line-height: 33px;
+        text-align: justify;
+    }
+
+    #bg .bg3 {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding: 10px 40px;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 1024px){
+    #bg .bg3 {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding: 10px 20px;
+        flex-wrap: wrap;
+    }
+}

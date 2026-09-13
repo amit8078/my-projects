@@ -1,0 +1,32 @@
+#subServices .subServices-img{
+    height: 520px;
+}
+
+#subServices .subServices-img img{
+    position: relative;
+    top: 100px;
+    width: 100%;
+    height: 420px;
+    object-fit: contain,cover;
+}
+
+#subServices .subServices-contents .subServices-heading{
+    color: rgb(39, 134, 39);
+    font-size: 23px;
+    text-align: center;
+    padding: 7px 0;
+}
+
+#subServices .subServices-contents .subServices-content{
+    padding: 15px 220px;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+
+@media (max-width: 1024px){
+    #subServices .subServices-contents .subServices-content {
+        padding: 5px 40px;
+    }
+}

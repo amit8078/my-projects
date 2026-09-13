@@ -1,0 +1,54 @@
+#reputation-body .reputation-img{
+    height: 520px;
+}
+
+#reputation-body .reputation-img img{
+    position: relative;
+    top: 100px;
+    width: 100%;
+    height: 420px;
+    object-fit: contain,cover;
+}
+
+#reputation-body .reputation-content .reputation-heading{
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+    color: rgb(35, 118, 35);
+}
+
+#reputation-body .reputation-content .reputation-paragraph{
+    padding: 0px 190px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+#reputation-body .reputation-terms{
+    padding: 20px 220px;
+    list-style: none;
+    font-size: 17px;
+    display: flex;
+    justify-content: space-around;
+    font-weight: lighter;
+    color: rgb(108, 106, 106);
+}
+
+@media (max-width: 1024px){
+    #reputation-body .reputation-content .reputation-paragraph {
+        padding: 0px 40px;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: justify;
+    }
+
+    #reputation-body .reputation-terms {
+        padding: 30px 40px;
+        list-style: none;
+        font-size: 17px;
+        display: flex;
+        justify-content: space-around;
+        font-weight: lighter;
+        color: rgb(108, 106, 106);
+    }
+}

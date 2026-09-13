@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <section id="navbar">
+        <div class="logo">
+            <a href="home.html"><img src="Images/logo.png" alt=""></a>
+        </div>
+
+        <div class="menu-btn" id="menuBtn">☰</div>
+
+        <div class="nav-items" id="navItems">
+            <a href="#">HOME</a>
+            <a href="#about-section">ABOUT US</a>
+            <div class="service-menu">
+                <a href="#our-services">SERVICE</a>
+                <div class="service-dropDown">
+                    <a href="backgroundCheck.html"><span>Background Checks</span></a>
+                    <a href="reputation.html"><span>Reputational Due Diligence</span></a>
+                    <a href="IT_Services.html"><span>IT & BPO Services</span></a>
+                    <a href="recruitment.html"><span>Recruitment Service</span></a>
+                </div>
+            </div>
+            <a href="#career">CAREER</a>
+            <a href="#contact">CONTACT</a>
+            <a href="login.html">LOGIN</a>
+        </div>
+    </section>
+
+    <section id="slider">
+        <div class="slide">
+            <div>
+                <img src="Images/slider1.jpg" alt="">
+                <p>We take personal privacy & confidentiality seriously.</p>
+            </div>
+
+            <div>
+                <img src="Images/slider2.jpg" alt="">
+                <p>Efficient to handle inbounds & outbound task.</p>
+            </div>
+
+            <div>
+                <img src="Images/slider3.png" alt="">
+                <p>Make your business better.</p>
+            </div>
+            
+            <div>
+                <img src="Images/slider4.jpg" alt="">
+                <p>We recruit today’s talent for tomorrow.</p>
+            </div>
+        </div>
+
+        <button class="prev" onclick="previousSlide()">❮</button>
+        <button class="next" onclick="nextSlide()">❯</button>
+
+        <div class="dots">
+            <span onclick="goToSlide(0)"></span>
+            <span onclick="goToSlide(1)"></span>
+            <span onclick="goToSlide(2)"></span>
+            <span onclick="goToSlide(3)"></span>
+        </div>
+    </section>
+
+    <section id="about-section">
+        <div class="about-headline">
+            <img src="Images/line.jpg" alt="">
+            <h2>About Us</h2>
+            <img src="Images/line.jpg" alt="">
+        </div>
+
+        <div class="about1">
+            <div class="about1-left aa">
+                <img src="Images/about1.jpg" alt="">
+            </div>
+            <div class="about1-right">
+                <h3>WHO WE ARE ?</h3>
+                <p>Founded in 2017, Veridical Venture is a leading service provider of employment screening background checks. 
+                    Background check is essentially an independent third party verification of the information provided, 
+                    with the capability to offer high quality investigations in entire India.
+                </p>
+            </div>
+        </div>
+
+        <div class="about1 about2">
+            <div class="about1-right">
+                <h3>WHY CHOOSE US ?</h3>
+                <p>Veridical Venture provides detailed background checks and screening services that enable businesses to hire with confidence. 
+                    Using our extensive database and national network of over 900+ investigators, we’re able to provide the highest-caliber 
+                    services to businesses of every size.
+                </p>
+            </div>
+
+            <div class="about1-left right-img">
+                <img src="Images/about2.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="about1">
+            <div class="about1-left aa">
+                <img src="Images/about3.jpg" alt="">
+            </div>
+            <div class="about1-right">
+                <h3>VISION</h3>
+                <p>We are committed to provide solutions with more concentration on professionalism and tend to develop fruitful and 
+                    long-term relationship with our clients. We know our employees are our greatest assets and empower our employees 
+                    to grow professionally and personally offering wonderful work environment.
+                </p>
+            </div>
+        </div>
+
+        <div class="about1 about2">
+            <div class="about1-right">
+                <h3>MISSION</h3>
+                <p>Our mission is to provide error free verification services to all our clients cost effectively and to exceed customer’s 
+                    expectations by delivering exceptional customer service.
+                </p>
+            </div>
+
+            <div class="about1-left right-img">
+                <img src="Images/about4.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="our-services">
+        <div class="services-headline">
+            <img src="Images/line.jpg" alt="">
+            <h2>Our Services</h2>
+            <img src="Images/line.jpg" alt="">
+        </div>
+
+        <div class="service-contents">
+            <div class="service-content">
+                <p>Background Checks</p>
+                <a href="backgroundCheck.html"><img src="Images/service1.jpg" alt=""></a>
+            </div>
+
+            <div class="service-content">
+                <p>Reputational Due Diligence</p>
+                <a href="reputation.html"><img src="Images/service2.jpg" alt=""></a>
+            </div>
+
+            <div class="service-content">
+                <p>IT & BPO Services</p>
+                <a href="IT_Services.html"><img src="Images/service3.png" alt=""></a>
+            </div>
+
+            <div class="service-content">
+                <p>Recruitment Services</p>
+                <a href="recruitment.html"><img src="Images/service4.png" alt=""></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="career">
+        <div class="Title headline">
+            <img src="Images/line.jpg" alt="">
+            <h2>Our Career</h2>
+            <img src="Images/line.jpg" alt="">
+        </div>
+
+        <div class="career-content">
+            <div class="career-img">
+               <a href="IT_Services.html"><img src="Images/career-image1.jpg" alt=""></a>
+            </div>
+            <p>
+                With each report we make an individual trust a stranger. 
+                This thought inspires us to create new ways of providing 
+                our customers the most up to date information and help 
+                build more trustworthy relationships. If you want to join 
+                our team, do write to us.
+            </p>
+        </div>
+        
+
+    </section>
+
+    <section id="certificate">
+        <div class="Title headline">
+            <img src="Images/line.jpg" alt="">
+            <h2>Our Certification</h2>
+            <img src="Images/line.jpg" alt="">
+        </div>
+
+        <div class="certificate-bages">
+            <img src="Images/certificate-bages1.png" alt="">
+            <img src="Images/certificate-bages2.jpg" alt="">
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="Title headline">
+            <img src="Images/line.jpg" alt="">
+            <h2>Contact Us</h2>
+            <img src="Images/line.jpg" alt="">
+        </div>
+
+        <div class="contact-body">
+            <div class="left">
+                <h2><span class="contact-span">Veridical</span> Venture</h2>
+                <div class="Registered-Address space">
+                    <i class="fa-solid fa-location-dot"></i><span class="contact-span">Registered Address:</span>
+                    <p>A-12, Second floor,, Vyapaar Kendra, C-Block,Palam Vihar, Gurugram- 122017, Haryana</p>
+                </div>
+
+                <div class="Business space">
+                    <span class="contact-span">Business Enquiries</span>
+                    <div class="businessFirst">
+                    <i class="fa-solid fa-envelope"></i><span>sales@veridicalventure.com</span>
+                    </div>
+                    
+                    <div class="businessFirst">
+                       <i class="fa-solid fa-envelope"></i><span>Connect with whatsapp</span>
+                       <a href="https://web.whatsapp.com/"><img src="Images/whatapp.png" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="career-opportunities space">
+                    <span class="contact-span">Career Opportunities</span>
+                    <div class="contact-career">
+                        <div><i class="fa-solid fa-envelope"></i><span>admin@veridicalventure.com</span></div>
+                        <div><i class="fa-solid fa-mobile-screen"></i><span>8448871746</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right">
+                <h2>Get Connected</h2>
+                <form action="php/contact.php" method="POST">
+                    <label for="Name">Name *</label><br>
+                    <input type="text" name="name" placeholder="Your Name *" required><br><br>
+
+                    <label for="Company Name">Comapany Name *</label><br>
+                    <input type="text" name="companyName" placeholder="Your Company Name *" required><br><br>
+
+                    <div  class="sub-form">
+                        <div class="subForm">
+                            <div class="subForm1">
+                                <label for="ContactNumber">Contact Number *</label><br>
+                                <input type="text" name="contactNumber" placeholder="Your Phone Number *" required><br><br>
+                            </div>
+                        
+                            <div subForm1>
+                                <label for="Email">Email Address *</label><br>
+                                <input type="text" name="email" placeholder="Your Email Address *" required><br><br>
+                            </div>
+                        </div>
+
+                        <div class="subForm">
+                            <div class="subForm1">
+                                <label for="City">City *</label><br>
+                                <input type="text" name="city" placeholder="Enter City Name *" required><br><br>
+                            </div>
+                        
+                            <div subForm1>
+                                <label for="Country">Country *</label><br>
+                                <select name="country" id="country" required>
+                                    <option value="">---Select Conutry---</option>
+                                    <option value="India">India</option>
+                                    <option value="America">America</option>
+                                    <option value="Newsaland">Newsaland</option>
+                                    <option value="Iran">Iran</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <label for="description">How may we help you?</label>
+                        <textarea name="feedback" id="feedback" rows="5" cols="15"></textarea><br>
+                        
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <section id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28047.70522484775!2d77.03335274999999!3d28.510756299999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1989e68a3611%3A0xc0206b130cc92511!2sPalam%20Vihar%2C%20Gurugram%2C%20Haryana!5e0!3m2!1sen!2sin!4v1787132052857!5m2!1sen!2sin" width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </section>
+
+        <section id="bottom">
+            <span>Copyright © 2020 Veridical Venture-All Rights Reserved.</span>
+            <button>Disclaimer</button>
+        </section>
+    </footer>
+
+    <script src="javascript/script.js"></script>
+
+</body>
+</html>
